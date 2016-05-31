@@ -38,7 +38,10 @@ import time
 h.load_file('stdlib.hoc')
 h.load_file('import3d.hoc')
 
-cell = h.Import3d_Neurolucida3()
+if filename.lower()[-4:] == '.swc':
+    cell = h.Import3d_SWC_read()
+else:
+    cell = h.Import3d_Neurolucida3()
 cell.input(filename)
 
 start = time.time()

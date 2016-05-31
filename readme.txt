@@ -46,3 +46,10 @@ Changelog:
               surfaces now provably watertight (last change introduced holes)
 
 2013-10-05    fix to extreme points of soma (was using axis, not the soma data)
+
+2016-05-31    commented out some printfs and changed a tuple to a list to make
+              it compile with current cython and python code
+
+              now checking filenames and using the SWC loader if a .swc file
+              is loaded
+
